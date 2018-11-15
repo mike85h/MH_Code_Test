@@ -1,1 +1,11 @@
-import InputContainer from "./js/components/container/InputContainer";
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './components/App.js';
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('app')
+);
+
+module.hot.accept();

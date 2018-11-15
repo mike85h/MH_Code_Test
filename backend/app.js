@@ -2,10 +2,12 @@ const express = require('express');
 const port = 3000;
 const bodyParser = require('body-parser');
 const request = require('request');
+const cors = require('cors');
 
 const app = express();
 
 app.use(bodyParser.json())
+app.use(cors());
 
 app.get('/:searchOption/:searchText', (req, res, next) => {
   let text = req.params.searchText
@@ -24,7 +26,6 @@ app.get('/:searchOption/:searchText', (req, res, next) => {
     if(error){
       res.send(`error: ${error}`);
     }else{
-      console.log('statusCode:', response && response.statusCode);
       res.send(`${body}`)
     }
   };
