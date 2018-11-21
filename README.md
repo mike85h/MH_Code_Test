@@ -1,5 +1,7 @@
-##MH Code Test
+# Michael Harrington Code Test
 
-#decoupled app(back/front)
+### To run this app locally:  
 
-#run $npm start in front and backend, navigate to localhost//:8080.
+#### Clone repository
+#### $npm start in both front and backend
+#### Navigate to localhost//:8080
