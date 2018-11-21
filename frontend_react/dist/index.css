@@ -1,0 +1,62 @@
+html body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Ubuntu, sans-serif;
+}
+
+#mainAppSection {
+  height:100%;
+  width:100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 3vw;
+}
+.searchText{
+  width: 40vw;
+  height:3vh;
+  font-size: 3vh;
+  border-radius: 10%;
+  margin-bottom: 2vh;
+}
+.titleContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vw;
+}
+.title {
+  font-family: Comfortaa, cursive;
+  margin-bottom: 3vh;
+}
+.mainSelectLabel{
+  margin-bottom: 1vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#filterLabel{
+  margin-bottom: 2vh;
+  width:20vw;
+}
+.mainSelect{
+  width:10vw;
+  margin-top:2vh;
+  width: 20vw;
+}
+.searchButton{
+  margin-top: 4vh;
+}
+.eachRepo{
+  margin: 2vw;
+  font-size: 3vw;
+}

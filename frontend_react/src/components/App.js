@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import InputContainer from "./InputContainer.js";
+import Title from './Title.js'
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-  }
 
   render(){
     return(
-      <div className="container">
+      <div>
+        <Title />
         <InputContainer />
       </div>
     )
