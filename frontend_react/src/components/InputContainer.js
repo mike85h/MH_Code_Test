@@ -50,7 +50,6 @@ class InputContainer extends Component {
 
   onChange = () => {
     this.setState({searchText: event.target.value});
-    console.log(this.state.searchText);
   };
 
   handleChange = () => {

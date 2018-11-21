@@ -32,20 +32,16 @@ app.get('/', (req, res, next) => {
       if(error){
         res.send(`error: ${error}`);
       }else{
-        res.send(body)
+        cache.put(cacheKey,body,6000000);
+        res.send(body);
       }
     };
     //request resource
     request(options,callback);
   }else{
-    //let cachedResponse = cache.get()
+    let cacheResponse = cache.get(cacheKey);
+    res.send(cacheResponse);
   }
-  // console.log(cacheCheck);
-  // if(cache.get(cacheCheck)!=='' || cache.get(cacheCheck)!==undefined){
-  //   cache.put()
-  // }
-  //set header: user-agent required for GitHub API v3
-
 })
 
 app.listen(port)
