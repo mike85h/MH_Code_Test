@@ -10,7 +10,7 @@ class InputContainer extends Component {
       filter:"stars",
       result:[],
       perPage: "20",
-      pageNum: "1/"
+      pageNum: "1"
     };
   }
 
@@ -55,7 +55,6 @@ class InputContainer extends Component {
 
   handleChange = () => {
     this.setState({filter: event.target.value})
-    console.log(this.state.filter);
   };
 
   render() {
